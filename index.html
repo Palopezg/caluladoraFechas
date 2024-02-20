@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Fechas</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="calculadora-fechas">
+        <h1>Calculadora de Fechas</h1>
+        <form onsubmit="return calcularDiferenciaFechas()">
+            <div class="campo-fecha">
+                <label for="fecha1">Fecha 1:</label>
+                <input type="date" id="fecha1" name="fecha1" required>
+            </div>
+            <div class="campo-fecha">
+                <label for="fecha2">Fecha 2:</label>
+                <input type="date" id="fecha2" name="fecha2" required>
+            </div>
+            <button type="submit">Calcular</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+    <script src="calculadora.js"></script>
+</body>
+</html>
+
