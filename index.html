@@ -4,25 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Fechas</title>
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Tus estilos personalizados aquí -->
 </head>
 <body>
-    <div class="calculadora-fechas">
-        <h1>Calculadora de Fechas</h1>
-        <form onsubmit="return calcularDiferenciaFechas()">
-            <div class="campo-fecha">
-                <label for="fecha1">Fecha 1:</label>
-                <input type="date" id="fecha1" name="fecha1" required>
-            </div>
-            <div class="campo-fecha">
-                <label for="fecha2">Fecha 2:</label>
-                <input type="date" id="fecha2" name="fecha2" required>
-            </div>
-            <button type="submit">Calcular</button>
-        </form>
-        <div id="resultado"></div>
+
+<div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">Calculadora de Fechas</h5>
+            <!-- Formulario de la calculadora -->
+            <form>
+                <div class="form-group">
+                    <label for="startDate">Fecha de inicio:</label>
+                    <input type="date" class="form-control" id="startDate">
+                </div>
+                <div class="form-group">
+                    <label for="endDate">Fecha de fin:</label>
+                    <input type="date" class="form-control" id="endDate">
+                </div>
+                <button type="button" class="btn btn-primary btn-block" onclick="calculateDifference()">Calcular Diferencia</button>
+            </form>
+            <p id="result" class="card-text"></p>
+        </div>
     </div>
-    <script src="calculadora.js"></script>
+</div>
+
+<script src="dateCalculator.js"></script>
 </body>
 </html>
-

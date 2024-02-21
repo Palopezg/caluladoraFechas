@@ -1,0 +1,49 @@
+/* styles.css */
+
+.card {
+    width: 90%; /* Ajusta según prefieras el tamaño de la card */
+    max-width: 500px; /* Establece un máximo para pantallas grandes */
+    margin: auto; /* Centra la card en la pantalla */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    background-color: #ECE2D0; /* Color de fondo para la card */
+}
+
+.card-body {
+    padding: 20px; /* Aumenta el padding para un aspecto más amplio */
+}
+
+/* Estilos para inputs */
+.form-control {
+    background-color: #F4ECE6;
+    border: 2px solid #D3BCC0;
+    color: #5D5C61;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(162, 103, 105, 0.2);
+    border-color: #A26769;
+}
+
+/* Estilos para el botón */
+.btn-primary {
+    background-color: #B5838D;
+    border-color: #A26769;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #A26769;
+    transform: translateY(-3px);
+    border-color: #965662;
+}
+
+/* Asegurando responsividad */
+@media (max-width: 576px) {
+    .card {
+        width: 95%; /* Más ancho en dispositivos pequeños para aprovechar el espacio */
+        margin: 20px auto; /* Aumenta el margen superior e inferior */
+    }
+}
